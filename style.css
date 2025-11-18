@@ -1,0 +1,106 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; /* Light Grey background */
+    color: #333;
+    padding-top: 60px; /* Space for fixed header/nav */
+}
+
+/* Header & Navigation Styling */
+header {
+    background: #2c3e50; /* Dark blue/grey */
+    color: #fff;
+    padding: 20px 0 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid #3498db; /* Accent border */
+}
+
+nav {
+    background: #34495e;
+    text-align: center;
+    padding: 10px 0;
+    /* When header is fixed, nav can be part of it, but placed below header content */
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, font-weight 0.2s;
+}
+
+nav a:hover {
+    background-color: #4a6279;
+}
+
+/* Main Content Layout */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Styling */
+h2 {
+    color: #2980b9; /* Blue accent */
+    border-bottom: 2px solid #bdc3c7;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Resume and Biodata Specific Styles */
+.job-entry, .edu-entry {
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+}
+
+.date {
+    font-style: italic;
+    color: #7f8c8d;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Biodata Description List Styling (dl, dt, dd) */
+dl {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Set column widths for alignment */
+    gap: 10px 15px;
+    padding: 10px 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+dd {
+    margin-left: 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    background: #ecf0f1;
+    color: #7f8c8d;
+    border-top: 1px solid #ccc;
+}
